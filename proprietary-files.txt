@@ -317,7 +317,7 @@ vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 
 # Display (Pixelworks)
-odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
+# odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
 odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
 odm/bin/irisConfig
 odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
@@ -332,6 +332,9 @@ odm/lib64/libsnapdragoncolor-pxlw.so
 vendor/etc/snapdragon_color_libs_config.xml
 vendor/lib64/libpwirisfeature.so
 vendor/lib64/libpwirishalwrapper.so
+vendor/lib64/vendor.pixelworks.hardware.display@1.2.so
+odm/lib64/libpwirispq.so
+odm/lib64/libpwirisPCS.so
 
 # Display (SDM)
 vendor/etc/display/DPU660.xml|b26dd73e361546d89bf3d7082a471703dc6ac2cb
@@ -339,6 +342,8 @@ vendor/etc/display/DPU670.xml|e5131a60ceff29ca5eb561eec7eddadef1d0486f
 vendor/etc/display/DPU720.xml|4e54e8712d65773eb87867bf64a4cb98ea9bb8c3
 vendor/etc/display/DPU7__.xml|c056f3cb9fa123ca3de5b2a9775c184dddf25b9d
 vendor/etc/display/DPU820.xml|35afcb7834d13eacc8f14d2ff4ac5132bb01a563
+vendor/etc/display/DPU830.xml
+vendor/etc/display/DPU860.xml
 vendor/etc/display/DPU8__.xml|2360038d60e9dff36d7f14a59a25da74bac1abe4
 vendor/etc/display/DPU9__.xml|ed8ec4a7a6852d8340bd98448db9f13634083edd
 vendor/lib64/libbacklight-calib.so|a5990fa87932196f9e2c38b2ec85786daa6b3a9c
@@ -357,10 +362,57 @@ vendor/lib64/libtestutils.so|61b98f252afde4eb7c674de870e7afb590c9bb2a
 vendor/lib64/libtinyxml2_1.so|ae0c9190fd54c18a6c28dfccdfd29655abcb08de
 
 # Display calibration data
+vendor/etc/display/advanced_sf_offsets.xml
+vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/qdcm_calib_data_22001_samsung_S6E3XA2_dsc_cmd_mode_panel.json
+vendor/etc/display/qdcm_calib_data_22001_samsung_s6e3fac_fhd_cmd_mode_dsc_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_BF185_P_3_A0001_dsc_cmd_mode_panel.json
+vendor/etc/display/qdcm_calib_data_BOE_AB241_NT37701A.json
+vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_boe_nt37705_dsc_cmd_mode_panel.json
+vendor/etc/display/qdcm_calib_data_boe_rm692e5_dsc_cmd_mode_panel.json
+vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_without_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json
 vendor/etc/display/qdcm_calib_data_samsung_S6E3HC3_dsc_cmd_mode_panel.json
 vendor/etc/display/qdcm_calib_data_samsung_S6E3HC3_dsc_cmd_mode_panel_21631.json
+vendor/etc/display/qdcm_calib_data_samsung_ams662zs02_dsc_cmd_mode_panel.json
+vendor/etc/display/qdcm_calib_data_senna22623_ab575_tm_nt37705_dsc_cmd_mode_panel.json
+vendor/etc/display/qdcm_calib_data_senna_ab575_04id_tm_nt37705_dsc_cmd_mode_panel.json
+vendor/etc/display/qdcm_calib_data_senna_ab575_tm_nt37705_dsc_cmd_mode_panel.json
+vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_tianma_ili7838a_dsc_cmd_mode_panel.json
+vendor/etc/display/qdcm_calib_data_tianma_nt37705_dsc_cmd_mode_panel.json
+vendor/etc/display/thermallevel_to_fps.xml
+vendor/etc/ltm_config_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_22001_samsung_S6E3XA2_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_BF185_P_3_A0001_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_BOE_AB241_NT37701A.xml
+vendor/etc/ltm_config_boe_nt37705_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_boe_rm692e5_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_samsung_AMS643YE01_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_samsung_AMS678UW01_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_samsung_S6E3HC3_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_samsung_S6E3HC3_dsc_cmd_mode_panel_21631.xml
+vendor/etc/ltm_config_samsung_SOFE03F_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml
+vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/ltm_config_samsung_amb655xl08_amoled_fhd+_panel.xml
+vendor/etc/ltm_config_samsung_amb670yf01_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_samsung_ams662zs02_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_senna22623_ab575_tm_nt37705_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_senna_ab575_04id_tm_nt37705_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_senna_ab575_tm_nt37705_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_tianma_ili7838a_dsc_cmd_mode_panel.xml
+vendor/etc/ltm_config_tianma_nt37705_dsc_cmd_mode_panel.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -613,10 +665,10 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=_vendor
 
 # Hotword Enrollment
-my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
-my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
-my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
-my_product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk
+# my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
+# my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
+# my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
+# my_product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk
 
 # IMS
 system/lib64/vendor.qti.diaghal-V1-ndk.so:system_ext/lib64/vendor.qti.diaghal-V1-ndk.so
@@ -765,7 +817,7 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so
+vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
@@ -783,6 +835,8 @@ vendor/lib64/libqcodec2_platform.so
 vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libvideotxr.so
+#  vendor/lib64/libpalclient.so
+#  vendor/lib64/vendor.qti.hardware.pal@1.0.so
 
 # Memory
 vendor/lib64/libvmmem.so
@@ -1117,14 +1171,14 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 
-# RIL - UIM
-product/app/uimgbaservice/uimgbaservice.apk
-product/etc/permissions/UimGba.xml
-product/etc/permissions/UimGbaManager.xml
-product/etc/permissions/UimService.xml
-product/framework/uimgbalibrary.jar
-product/framework/uimgbamanagerlibrary.jar
-product/framework/uimservicelibrary.jar
+# RIL - UIM (Not even on global?)
+# product/app/uimgbaservice/uimgbaservice.apk
+# product/etc/permissions/UimGba.xml
+# product/etc/permissions/UimGbaManager.xml
+# product/etc/permissions/UimService.xml
+# product/framework/uimgbalibrary.jar
+# product/framework/uimgbamanagerlibrary.jar
+#product/framework/uimservicelibrary.jar
 
 # RemoteFS
 vendor/bin/rmt_storage
@@ -1337,7 +1391,7 @@ odm/bin/hw/android.hardware.drm@1.4-service.widevine
 odm/etc/init/android.hardware.drm@1.4-service.widevine.rc
 odm/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 odm/lib64/mediadrm/libwvdrmengine.so
-odm/lib64/liboemcrypto.so
+# odm/lib64/liboemcrypto.so
 vendor/etc/oplus_Widevine_licenses.pfm
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
@@ -1354,7 +1408,8 @@ vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # WiFi Display (system) - from dada OS2.0.217.0.WOCMIXM
 system/framework/WfdCommon.jar;BOOT_JAR|76fab5ed43206989057284fa26e8b894f1da102f
-system_ext/bin/wfdservice64:system_ext/bin/wfdservice|34851904d02d11d3cfebbc7b8745a9444ba3e7c5
+system_ext/bin/wfdservice64
+# :64 for fixup with 32 bit wfdservice
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|6669d5ee462c981663b8ac573d84d334e4eed96c
 system_ext/etc/seccomp_policy/wfdservice64.policy|1e331272649395423b11c575892e0bdc9433b820
