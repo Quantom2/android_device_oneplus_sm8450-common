@@ -151,7 +151,11 @@ PRODUCT_COPY_FILES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
-    android.hardware.health-service.qti_recovery
+    android.hardware.health-service.qti_recovery \
+    android.hardware.health-V1-ndk.vendor \
+    android.hardware.health-V2-ndk.vendor \
+    android.hardware.health@1.0.vendor \
+    android.hardware.health@2.1.vendor
 
 # Hotword enrollment
 PRODUCT_COPY_FILES += \
